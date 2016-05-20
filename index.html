@@ -1,0 +1,53 @@
+<html>
+    <head>
+    <title>2048</title>
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <script src="Game.js"type="text/javascript"></script>
+    <script src="jquery-2.2.0.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h2>2048</h2>
+                <p>Join the adjacent similar tiles to achieve 2048 tile!</p>
+            </div>
+            <span id="button"><button type="button" id="reset">New Game</button></span>       
+        </header>
+        <main id="game">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </main>
+        <div id="gameOver">
+            <h1>Game Over</h1>
+            <span id="button"><button type="button" id="reset1">Try Again</button></span>
+        </div>
+        <div id="achieved2048">
+            <h1>2048 Achieved!!</h1>
+            <span id="button"><button type="button" id="reset2">Restart</button></span>
+            <span id="button"><button type="button" id="continue">Continue</button></span>
+        </div>
+        <footer>
+            <div class="score-display">Score: <div id="score"></div></div>
+        </footer>
+        <script>
+            function onBodyLoad() {
+                Game.init();
+            }
+            window.addEventListener('load', onBodyLoad);
+        </script>
+    </body>
+</html>
