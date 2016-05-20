@@ -60,6 +60,7 @@ h1 {
 }
 
 header {
+    margin-top: 25px;
     flex-direction: column;
 }
 
